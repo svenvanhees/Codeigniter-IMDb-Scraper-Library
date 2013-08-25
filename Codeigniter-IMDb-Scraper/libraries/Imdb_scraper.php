@@ -3,18 +3,31 @@
 // Codeigniter IMDb Scraper
 // Version: 1.1
 // Author: Sven van Hees
-// 
-// This is a modified script for the use Codeigniter! The orginal author is listed below.
+// Last Updated: August 25, 2013 
+//
+// This is a modified script for the use Codeigniter! This script is based on the author listed below.
 // 
 // Issues   : https://github.com/Tony0892/Codeigniter-IMDb-Scraper/issues
 // Wiki     : https://github.com/Tony0892/Codeigniter-IMDb-Scraper/wiki
 // //////////////////////////////////////////////////////////////////////////////////////////////////////
-// Orginal Author: Abhinay Rathore
+// Based on the work of: Abhinay Rathore
 // Website: http://www.AbhinayRathore.com
-// Blog: http://web3o.blogspot.com
-// Demo: http://lab.abhinayrathore.com/imdb/
-// More Info: http://web3o.blogspot.com/2010/10/php-imdb-scraper-for-new-imdb-template.html
-// Last Updated: August 25, 2013
+//
+// Codeigniter IMDb Scraper Library
+// Copyright (C) 2013  Sven van Hees
+//
+//    This program is free software: you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation, either version 3 of the License, or
+//    (at your option) any later version.
+//
+//    This program is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
  
 class Imdb_scraper
@@ -28,7 +41,7 @@ class Imdb_scraper
         $this->CI->load->config('imdb_scraper');
     }
 
-    // Get movie information by Movie Title.
+    // Get movie information by either the movie title, or the IMDb Id.
     // This method searches the given title on Google, Bing or Ask to get the best possible match.
     public function getMovieInfo($title)
     {
@@ -220,7 +233,7 @@ class Imdb_scraper
         return array_filter($arr);
     }
      
-    // Get all Videos and Trailers
+    // Get all Videos and Trailers and Display The Movie Page
     public function getVideos($titleId)
     {
         $html = $this->geturl("http://www.imdb.com/title/${titleId}/videogallery");
@@ -231,7 +244,7 @@ class Imdb_scraper
         return array_filter($videos);
     }
 
-    // Get Youtube Trailer URL
+    // Get Youtube Trailer URL With Options Privided In The Config File
     public function getYoutubeTrailer($title)
     {
         $title = preg_replace("/\([0-9].*\)/", "",$title);  
@@ -256,6 +269,7 @@ class Imdb_scraper
         return htmlspecialchars($trailer);
     }
 
+    //Make The Title Slug From the Title
     private function getTitleSlug($title, $replace=array())
     {
         if( !empty($replace) ) {

@@ -3,10 +3,11 @@ Codeigniter-IMDb-Scraper
 
 A IMDb scraper optimized for codeigniter
 
+
+--------------------------------------------------------------------------------------------------------------------------
+EXAMPLE 1:
 To use this scraper, upload the 2 files, both named imdb_scraper, to their repective folders.
 Once you have done that, we can begin.
-
-EXAMPLE 1:
 
 We have 2 ways of getting movie information. This can be done by using a title(e.g Alysium) or a IMDb ID(e.g tt1535108)
 To get the information from the movie Alysium we can do the following:

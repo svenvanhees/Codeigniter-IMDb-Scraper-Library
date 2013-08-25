@@ -13,12 +13,12 @@
 | -------------------------------------------------------------------------
 | These are some default options you can choose from to refine you results.
 | 
-| * local_title 	- If set to TRUE it will use the titles that are specific to your country if there are any.
-| * include_slug	- When this is TRUE, it will pass a clean title slug in the results array named title_slug
-|					  e.g "Star Trek: Into Darkness" , Will transform in "star-trek-into-darkness".
+| * local_info 	    - If set to TRUE it will use the titles that are specific to your country if there are any.
+| * include_slug	  - When this is TRUE, it will pass a clean title slug in the results array named title_slug
+|	  e.g "Star Trek: Into Darkness" , Will transform in "star-trek-into-darkness".
 | * slug_delimiter	- Here you can choose what kind of delimiter you want for your title slug
-|					  If you don't what it is, leave it as is.
-| * acteur_limit	- Specify how many cast members / actors you want to include in the final output. 1 - 30 
+|	  If you don't what it is, leave it as is.
+| * acteur_limit	  - Specify how many cast members / actors you want to include in the final output. 1 - 30 
 */
 $config['local_info'] = FALSE;
 $config['include_slug'] = TRUE;
@@ -38,12 +38,12 @@ $config['actor_limit'] = '5';
 |
 | The light mode will only scrape the following:
 | 
-| * title_id 	* rating		* release_date
+| * title_id 	  * rating		  * release_date
 | * timestamp 	* runtime 		* plot and storyline
-| * imdb_url 	* genres 		* cast
-| * title 		* directors 	* stars
+| * imdb_url 	  * genres 		  * cast
+| * title 		  * directors 	* stars
 | * title_slug	* writers 		* poster - small & medium
-| * year 		* mpaa_rating	* trailer
+| * year 		    * mpaa_rating	* trailer
 */
 $config['light_mode'] = TRUE;
 
@@ -56,12 +56,12 @@ $config['light_mode'] = TRUE;
 |
 | * A more detailed plot	- More detailed then the summary
 | * Release information		- More detailed release information
-| * Also known as			- Diffrent title aliases
-| * Release Dates			- Theatrical only
+| * Also known as			    - Diffrent title aliases
+| * Release Dates			    - Theatrical only
 | * Recomended Titles 		- Gives movie recommendations
-| * Media Images			- Like screen shots, photo's from actors etc.
-| * IMDB Video's			- Will only get the url to the film page, not the actual film it's self
-| * Youtube Trailer 		- This will automatically get one youtube trailer with the config below.
+| * Media Images			    - Like screen shots, photo's from actors etc.
+| * IMDB Video's			    - Will only get the url to the film page, not the actual film it's self
+| * Youtube Trailer 		  - This will automatically get one youtube trailer with the config below.
 */
 $config['get_extra_info'] = TRUE;
 

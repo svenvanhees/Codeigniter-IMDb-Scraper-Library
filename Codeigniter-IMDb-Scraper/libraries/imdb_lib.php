@@ -5,7 +5,7 @@
 // Author: Sven van Hees
 // Last Updated: August 25, 2013 
 //
-// This is a modified script for the use Codeigniter! This script is based on the author listed below.
+// This is a modified script for the use with Codeigniter! This script is based on the author listed below.
 // 
 // Issues   : https://github.com/Tony0892/Codeigniter-IMDb-Scraper/issues
 // Wiki     : https://github.com/Tony0892/Codeigniter-IMDb-Scraper/wiki

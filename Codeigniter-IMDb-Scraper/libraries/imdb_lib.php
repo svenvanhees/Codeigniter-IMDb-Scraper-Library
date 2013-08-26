@@ -38,7 +38,7 @@ class Imdb
     function __construct()
     {
         $this->CI =& get_instance();
-        $this->CI->load->config('imdb_scraper');
+        $this->CI->load->config('imdb_conf');
     }
 
     // Get movie information by either the movie title, or the IMDb Id.

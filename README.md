@@ -6,9 +6,9 @@ A IMDb Scraper Optimized For Codeigniter
 --------------------------------------------------------------------------------------------------------------------------
 Main Features:
 
-	*Scrape options to refine the results
-	*Include a light mode to make searching faster
-	*Youtube trailer url in the final results, also has option available in the config
+	*Difrent scrape options to refine your results
+	*Includes a light mode to make searching faster
+	*Youtube trailer url in the final results, also has options available in the config
 	*More to follow...	
 
 --------------------------------------------------------------------------------------------------------------------------

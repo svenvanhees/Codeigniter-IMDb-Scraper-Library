@@ -1,8 +1,15 @@
 Codeigniter-IMDb-Scraper
 ========================
 
-A IMDb scraper optimized for codeigniter
+A IMDb Scraper Optimized For Codeigniter
 
+--------------------------------------------------------------------------------------------------------------------------
+Main Features:
+
+	*Scrape options to refine the results
+	*Include a light mode to make searching faster
+	*Youtube trailer url in the final results, also has option available in the config
+	*More to follow...	
 
 --------------------------------------------------------------------------------------------------------------------------
 EXAMPLE 1:

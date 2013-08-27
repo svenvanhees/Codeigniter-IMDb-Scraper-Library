@@ -9,6 +9,7 @@ Main Features:
 	*Difrent scrape options to refine your results
 	*Includes a light mode to make searching faster
 	*Youtube trailer url in the final results, also has options available in the config
+	*Also includes a timestamp in the final array for easy database filter and retrieval
 	*More to follow...	
 
 --------------------------------------------------------------------------------------------------------------------------

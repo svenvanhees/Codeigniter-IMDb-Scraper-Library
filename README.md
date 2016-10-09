@@ -1,3 +1,6 @@
+NOTE: This Library is not being updated anymore and will probaly not work.
+To get an updated version of a imdb scaper please visit: https://github.com/dhobi/PHP-IMDb-Scraper
+
 Codeigniter-IMDb-Scraper
 ========================
 
